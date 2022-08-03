@@ -119,12 +119,9 @@ textarea.form-control {
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message"></label>
                       <!-- <textarea class="form-input" id="contact-message" name="meta" data-constraints="@Required"> -->
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"data-constraints="@Required">
-                      <?php 
-                        foreach( $rows as $perfil) {
-                         echo $perfil['texto'];
-                        }
-                      ?>
+                      <!-- <textarea class="form-control" id="exampleFormControlTextarea1" name="meta" rows="10"data-constraints="@Required"> -->
+                      <textarea  name="meta" style="width: 100%;" data-constraints="@Required">
+                      <?php foreach( $rows as $perfil) { echo $perfil['texto']; } ?>
                       </textarea>
                     </div>
                   </div>
@@ -174,5 +171,9 @@ textarea.form-control {
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>

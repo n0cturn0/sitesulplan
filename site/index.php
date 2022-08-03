@@ -115,24 +115,24 @@ $rows[] = $row;
       <!-- END BNNER -->
 
             <!-- twiterr -->
-            <section class="section swiper-container swiper-slider" data-swiper='{"autoplay":{"delay":4567},"effect":"fade"}'>
-    <div class="swiper-wrapper text-center">
+            <!-- <section class="section swiper-container swiper-slider"> -->
+    <!-- <div class="swiper-wrapper text-center"> -->
 
     <div class="swiper-slide-caption section-md">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xl-10">
                 
-              <a class="twitter-timeline" data-lang="pt" data-width="2048" data-height="500" data-theme="light" href="https://twitter.com/sulplan?ref_src=twsrc%5Etfw">Tweets by sulplan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-lang="pt" data-width="2048" data-height="800" data-theme="light" href="https://twitter.com/sulplan?ref_src=twsrc%5Etfw">Tweets by sulplan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
               </div>
             </div>
           </div>
         </div>
-    </div>
-  </section>
-
+    <!-- </div> -->
+  <!-- </section> -->
+ 
       <section class="section section-md section-last bg-gray-100">
     <div class="container">
       <div class="row row-30 box-ordered">

@@ -33,6 +33,7 @@ textarea.form-control {
   width: 100%;
 }
 </style>
+
   </head>
   <body>
     <div class="preloader">
@@ -119,13 +120,10 @@ textarea.form-control {
                 <div class="col-12">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message"></label>
-                      <!-- <textarea class="form-input" id="contact-message" name="meta" data-constraints="@Required"> -->
-                      <textarea class="form-control" name="meta" id="exampleFormControlTextarea1" rows="30" data-constraints="@Required">
-                      <?php 
-                        foreach( $rows as $metas) {
-                         echo $metas['texto'];
-                        }
-                      ?>
+                     
+                    
+                      <textarea  name="meta" style="width: 100%;">
+                      <?php foreach( $rows as $metas) { echo $metas['texto']; } ?>
                       </textarea>
                     </div>
                   </div>
@@ -175,5 +173,9 @@ textarea.form-control {
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>
