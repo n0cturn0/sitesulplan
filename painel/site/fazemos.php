@@ -22,6 +22,16 @@ if (!$auth->isLoggedIn()) {
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+textarea {
+  width: 800px;
+  height: 400px;
+}
+
+textarea.form-control {
+  width: 100%;
+}
+</style>
   </head>
   <body>
     <div class="preloader">
@@ -108,7 +118,8 @@ if (!$auth->isLoggedIn()) {
                 <div class="col-12">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message"></label>
-                      <textarea  class="form-input" id="contact-message" name="meta" data-constraints="@Required">
+                      <!-- <textarea  class="form-input" id="contact-message" name="meta" data-constraints="@Required"> -->
+                      <textarea class="form-control" id="exampleFormControlTextarea1" name="meta" rows="10"data-constraints="@Required">
                       <?php 
                         foreach( $rows as $fazemos) {
                          echo $fazemos['texto'];

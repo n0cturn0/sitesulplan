@@ -1,3 +1,4 @@
+
 <?php
 
 require_once '../../vendor/autoload.php';
@@ -22,6 +23,16 @@ if (!$auth->isLoggedIn()) {
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+textarea {
+  width: 800px;
+  height: 400px;
+}
+
+textarea.form-control {
+  width: 100%;
+}
+</style>
   </head>
   <body>
     <div class="preloader">
@@ -93,7 +104,7 @@ if (!$auth->isLoggedIn()) {
         <div class="container">
           <div class="row justify-content-md-center">
           
-            <div class="col-md-9 col-lg-7 col-xl-5">
+            <div class="col-md-12 col-lg-7 col-xl-5">
           
            <div class="block-1 pe-xl-70">
          
@@ -108,7 +119,8 @@ if (!$auth->isLoggedIn()) {
                 <div class="col-12">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message"></label>
-                      <textarea class="form-input" id="contact-message" name="meta" data-constraints="@Required">
+                      <!-- <textarea class="form-input" id="contact-message" name="meta" data-constraints="@Required"> -->
+                      <textarea class="form-control" name="meta" id="exampleFormControlTextarea1" rows="30" data-constraints="@Required">
                       <?php 
                         foreach( $rows as $metas) {
                          echo $metas['texto'];

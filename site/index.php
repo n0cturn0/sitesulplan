@@ -95,7 +95,7 @@ $rows[] = $row;
       <section class="section swiper-container swiper-slider" data-swiper='{"autoplay":{"delay":4567},"effect":"fade"}'>
     <div class="swiper-wrapper text-center">
      <?php foreach ($rows as  $value) { ?>
-      <div class="swiper-slide context-dark" data-slide-bg="./images/<?php echo $value['imagem']; ?>">
+      <div class="swiper-slide context-dark"   data-slide-bg="./images/<?php echo $value['imagem']; ?>">
         <div class="swiper-slide-caption section-md">
           <div class="container">
             <div class="row justify-content-center">
