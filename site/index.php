@@ -82,14 +82,35 @@
         </div>
       </header>
 <?php  require_once ('./config/db.php'); 
-$mysqli = new mysqli($host, $user, $pass, $database);
+//Baners Principal
 $query = "SELECT * FROM img_banners";
 $result = $mysqli->query($query);
 while($row = $result->fetch_array())
 {
 $rows[] = $row;
 }
+//Metas
+$metas = "SELECT texto FROM inicial where id = 2";
+$result = $mysqli->query($metas);
+while($row = $result->fetch_array())
+{
+$meta[] = $row;
+}
 
+//Perfil
+$perfil = "SELECT texto FROM inicial where id = 3";
+$result = $mysqli->query($perfil);
+while($row = $result->fetch_array())
+{
+$exibe_perfil[] = $row;
+}
+//Oque Fazemos
+$fazemos = "SELECT texto FROM inicial where id = 4";
+$result = $mysqli->query($fazemos);
+while($row = $result->fetch_array())
+{
+$oque_fazemos[] = $row;
+}
 ?>
       <!-- BANNER -->
       <section class="section swiper-container swiper-slider" data-swiper='{"autoplay":{"delay":4567},"effect":"fade"}'>
@@ -859,22 +880,38 @@ $rows[] = $row;
             <!-- Tab panes-->
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tabs-1-1">
-                <p>Prestar assistência técnica rural, com ênfase na área de crédito rural, promover intercambio de informações visando melhorar o nível de tecnologia nas propriedades rurais, aumentando a produção, conforto e rentabilidade do produtor rural, para isso empregamos tecnologia aliada ao conhecimento e sensibilidade da coisa rural.s
+                <p><?php
+                  foreach($meta as $row)
+                  { echo $row['texto']; }
+                ?>
 
                 </p>
               </div>
               <div class="tab-pane fade" id="tabs-1-2">
-                <p>A SULPLAN, fundada em 1987 com a ambição de criar uma empresa de assessoria técnica agropecuária para atuar na área de credito rural, projetos e planejamento, utilizando alta tecnologia e incrementando o uso da informática na agropecuária. Fazemos planejamento, projetos rurais de custeio e investimento, projetos ambientais e serviços de topografia e georeferenciamento. Temos convênios com o Banco do Brasil, credenciamento junto a Sema/Seprotur, IBAMA, INCRA além do Banco Central e BNDES. Adotamos praticas de preservação do meio ambiente e recursos naturais utilizando papel reciclado, reaproveitando cartuchos e tonners das impressoras, não utilizamos copos e xícaras descartáveis e oferecemos nosso lixo à coleta seletiva.
+                <p><?php 
+                  foreach($exibe_perfil as $row)
+                  {
+                    echo $row['texto'];
+                  }
+                ?>
 
                 </p>
               </div>
               <div class="tab-pane fade" id="tabs-1-3">
-                <p>Os serviços prestados pela Sulplan são feitos por uma equipe motivada, competente, profissional e eficiente.</p>
+                <!-- <p>Os serviços prestados pela Sulplan são feitos por uma equipe motivada, competente, profissional e eficiente.</p>
                 <p>No crédito rural:Projetos para obtenção de crédito, cadastro para limites, avaliações e dimensionamentos.</p>
                 <p>Na Topografia: Serviços topográficos para fins diversos, levantamentos georeferenciados e cadastro georeferenciado, planialtimetria e drenagem.</p>
                 <p>Nos Projetos Ambientais:
                   Projetos para homologação de reserva legal, adequação às exigências do código florestal, órgãos de controle e fiscalização do meio ambiente e orientação técnica de sustentabilidade ambiental.
-                </p>
+                </p> -->
+                <?php 
+                  
+                  foreach($oque_fazemos as $row)
+                  {
+                    echo $row['texto'];
+                  }
+                ?>
+              
               </div>
             </div>
           </div> <!--<a class="btn btn-primary wow fadeInUp" href="about.html">Read more</a> -->
