@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="js/fk.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Poppins:wght@400;600&amp;family=Kalam:wght@300;400;700&amp;display=swap">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -969,7 +969,7 @@ $oque_fazemos[] = $row;
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-    <script src="./js/core.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
