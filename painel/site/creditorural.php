@@ -76,15 +76,16 @@ if (!$auth->isLoggedIn()) {
         </div>
       </header>
       <?php 
-// $mysqli = new mysqli($host, $user, $pass, $database);
-// $query = "SELECT * FROM img_banners";
-// $result = $mysqli->query($query);
-// while($row = $result->fetch_array())
-// {
-// $rows[] = $row;
-// }
-// $contador = count($rows);
-// ?>
+ require_once ('./config/db.php'); 
+ $credito = "SELECT texto FROM paginas where id = 1";
+ $result = $mysqli->query($credito);
+ while($row = $result->fetch_array())
+ {
+   $credito_view[] = $row;
+ }
+
+
+ ?>
       <section class="section section-md bg-default text-center">
         <div class="container">
           <div class="row justify-content-md-center">
@@ -109,37 +110,42 @@ if (!$auth->isLoggedIn()) {
                   </div>
                 </div>
         
-              <h3>Banners principais</h3>
+              <h3>Edição de crédito Rural</h3>
             
               <!--RD Mailform-->
             
              
-              <form   method="post" action="inserebannerprincipal.php" enctype="multipart/form-data">
+              <form   method="post" action="updatecreditorural.php" enctype="multipart/form-data">
                  
                 <div class="row row-20 row-narrow">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="form-wrap">
-                    <input class="form-input" id="file" type="file" name="arquivo"> 
-                      <label class="form-label" for="contact-2-name"></label>
+                   
+
+                    <textarea  name="meta"  style="width: 100%;">
+                    <?php 
+                    foreach ($credito_view as $values)
+                    {
+                    echo $values[0];
+                    }
+                    ?>
+                      </textarea>
+
+
+
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-2-phone" type="text" name="titulo" data-constraints="@Required">
-                      <label>Título para este banner</label>
-                     
-                    </div>
-                  </div>
-                  <div class="col-12">
+                  
+                  <!-- <div class="col-12">
                     <div class="form-wrap">
                     <label>Digite o texto para esse banner da página Inicial</label>
                       <textarea class="form-input" id="contact-2-message" name="pequenotexto" data-constraints="@Required"></textarea>
                     </div>
-                  </div>
+                  </div> -->
                 
                 
                   <div class="col-12">
-                    <button class="btn btn-block btn-primary" type="submit">Cadastra banner</button>
+                    <button class="btn btn-block btn-primary" type="submit">Editar</button>
                   </div>
                 </div>
               </form>
@@ -163,5 +169,9 @@ if (!$auth->isLoggedIn()) {
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>
