@@ -123,13 +123,8 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                    <?php 
-                    foreach ($credito_view as $values)
-                    {
-                    echo $values[0];
-                    }
-                    ?>
-                      </textarea>
+                <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
+                    </textarea>
 
 
 

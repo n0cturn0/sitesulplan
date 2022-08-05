@@ -1,7 +1,16 @@
+<?php 
+require_once '../../vendor/autoload.php';
+require_once  '../../site/config/db.php';
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
+$auth = new Delight\Auth\Auth($db);
+if (!$auth->isLoggedIn()) {
+    header('Location: ../../login.html');
+}
+?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Sulplan</title>
+    <title>Sulplan Painel de administração</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,118 +69,108 @@
                     <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
                   </div>
                 </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
-                      </li>
-                      <li class="rd-nav-item" >
-                      <a class="rd-nav-link" href="{{ url('/twitter')}}">
-                        <img src="images/twitter.png"  width="50" height="50">
-                      </a>
-                      </li>
-
-                    </ul>
-                  </div>
-                  <!-- RD Navbar Search-->
-
-                </div>
+               <?php  include_once('./menutop.php');?> 
               </div>
             </div>
           </nav>
         </div>
       </header>
+      <?php 
+ require_once ('./config/db.php'); 
+ $table_cr = "SELECT * from tabela_crural";
+ $result = $mysqli->query($table_cr);
+ while($row = $result->fetch_array())
+ {
+   $tbcredito_view[] = $row;
+ }
 
-    <!-- Credito -->
-    <section class="section breadcrumbs-custom">
-  <div class="parallax-container" data-parallax-img="images/bg-breadcrumbs.jpg">
-    <div class="breadcrumbs-custom-body parallax-content context-dark">
-      <div class="container">
-        <h2 class="breadcrumbs-custom-title">C R É D I T O  R U R A L</h2>
-      </div>
-    </div>
-  </div>
-  <div class="breadcrumbs-custom-footer">
-    <div class="container">
-      <ul class="breadcrumbs-custom-path">
-        <li><a href="index.html">Home</a></li>
-        <li class="active">Crédito Rural</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section section-md section-first bg-default text-md-left">
-  <div class="container">
-    <h2 class="text-primary">Crédito Rural:</h2>
-    <?php 
-      require_once ('./config/db.php'); 
-      $credito = "SELECT texto FROM paginas where id = 1";
-      $result = $mysqli->query($credito);
-      while($row = $result->fetch_array())
-      {
-        $credito_view[] = $row;
-      }
 
-      foreach ($credito_view as $values)
-      {
-        echo $values[0];
-      }
-
-      $table_cr = "SELECT * from tabela_crural";
-      $result = $mysqli->query($table_cr);
-      while($row = $result->fetch_array())
-      {
-        $tbcredito_view[] = $row;
-      }
-    ?>
-    <!-- <p>Financiamento podem ser de custeio ou investimento e tem regras próprias que dependem da atividade e porte do produtor.</p>
-    <p>Tipos de projetos</p>
-    <p><h5> Custeio Agrícola e Pecuário</h5></p>
-    <p>Pode ser financiado nesta linha o custeio dos insumos para a produção agrícola e pecuária</p>
-    <p><h5> MCR 6.2</h5></p>
-    <p>
-      Pode ser financiado nesta linha investimentos agropecuários que não se enquadram em outras linha ou tenham aquisição isolada ou ainda são itens financiados em promoções como feiras e eventos agropecuários.
-    </p>
-    <p><h5> FCO</h5></p>
-    <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os de grande porte e com projetos integrados, conveniados e de agroindústria. Mas a linha esta vinculada aos interesses prioritários de fomento com normas da comissão regional do FCO.</p>
-
-    
-    <p><h5> BNDES</h5></p>
-    <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os que não tem prioridade no FCO de qualquer porte com ou sem projetos integrados, conveniados e de agroindústria.</p> -->
-    <br>
-    <a href="https://www.gov.br/sudeco/pt-br/assuntos/fundo-constitucional-de-financiamento-do-centro-oeste/programacao-anual-de-financiamento-1/programacao-fco-2022-05-13.pdf"> <h4 class="breadcrumbs-custom-title">Programa FCO 2022</h4>
-    <p> <img src="images/pdf.png" height="50" width="50"></p></a>
-    <br></br>
-    <table class="table table-dark">
-
-        <thead>
-          <tr>
-          <th>Descrição</th>
-          <th>Base de cálculo</th>
-          <th>Preço</th>
-          </tr>
-        </thead>
-      <tbody>
-        <?php 
-        foreach ($tbcredito_view as $key => $value) {
-          # code...
+ ?>
+      <section class="section section-md bg-default text-center">
+        <div class="container">
+          <div class="row justify-content-md-center">
+          
+            <div class="col-md-9 col-lg-7 col-xl-5">
+          
+           <div class="block-1 pe-xl-70">
+          
+           
+         
+          
+          
+                 
+                  <div class="row row-10 gx-10 gx-10" data-lightgallery="group">
+                   
+                 
+                    <div class="col-4 col-sm-2 col-lg-4">
+                   
+                    
+                    </div>
+                  
+                  </div>
+                </div>
         
-        ?>
-        <tr>
-          <td><?php echo $value['descricao'] ?></td>
-          <td><?php echo $value['base_calculo'] ?></td>
-          <td><?php echo $value['preco'] ?></td>
-        </tr>
-        <?php } ?>
-      </tbody>
-    </table>
+              <h3>Edição da Tabela de crédito Rural</h3>
+            
+              <!--RD Mailform-->
+            
+             
+              <form   method="post" action="updatecreditoruraltabela.php" enctype="multipart/form-data">
+                 
+                <div class="row row-20 row-narrow">
+                <div class="col-12">
+                    <div class="form-wrap">
+                   
+
+                    <table class="table table-dark">
+
+<thead>
+  <tr>
+  <th>Descrição</th>
+  <th>Base de cálculo</th>
+  <th>Preço</th>
+  <th></th>
+  </tr>
+</thead>
+<tbody>
+<?php 
+foreach ($tbcredito_view as $key => $value) {
+  # code...
+
+?>
+<tr>
+  <td><?php echo $value['descricao'] ?></td>
+  <td><?php echo $value['base_calculo'] ?></td>
+  <td><?php echo $value['preco'] ?></td>
+  <td><a href="<?php echo $value['id']; ?>" type="button" class="btn btn-success btn-sm">Editar</a></td>
+</tr>
+<?php } ?>
+</tbody>
+</table>
 
 
 
-  </div>
-</section>
-    <!-- End Credito Rural -->
-
+                    </div>
+                  </div>
+                  
+                  <!-- <div class="col-12">
+                    <div class="form-wrap">
+                    <label>Digite o texto para esse banner da página Inicial</label>
+                      <textarea class="form-input" id="contact-2-message" name="pequenotexto" data-constraints="@Required"></textarea>
+                    </div>
+                  </div> -->
+                
+                
+                  
+                </div>
+              </form>
+               
+             
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
 
       <footer class="section footer-modern footer-modern-2">
 
@@ -183,7 +182,11 @@
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/core.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>

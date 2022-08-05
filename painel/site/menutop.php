@@ -26,6 +26,9 @@
                         <ul class="rd-menu rd-navbar-dropdown">
                           <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./creditorural.php">Editar</a>
                           </li>
+                          <hr>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./creditoruraltabela.php">Editar Tabela</a>
+                          </li>
                           
                           
                          
