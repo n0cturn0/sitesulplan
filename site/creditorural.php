@@ -103,7 +103,21 @@
 <section class="section section-md section-first bg-default text-md-left">
   <div class="container">
     <h2 class="text-primary">Crédito Rural:</h2>
-    <p>Financiamento podem ser de custeio ou investimento e tem regras próprias que dependem da atividade e porte do produtor.</p>
+    <?php 
+      require_once ('./config/db.php'); 
+      $credito = "SELECT texto FROM paginas where id = 1";
+      $result = $mysqli->query($credito);
+      while($row = $result->fetch_array())
+      {
+        $credito_view[] = $row;
+      }
+
+      foreach ($credito_view as $values)
+      {
+        echo $values[0];
+      }
+    ?>
+    <!-- <p>Financiamento podem ser de custeio ou investimento e tem regras próprias que dependem da atividade e porte do produtor.</p>
     <p>Tipos de projetos</p>
     <p><h5> Custeio Agrícola e Pecuário</h5></p>
     <p>Pode ser financiado nesta linha o custeio dos insumos para a produção agrícola e pecuária</p>
@@ -114,11 +128,13 @@
     <p><h5> FCO</h5></p>
     <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os de grande porte e com projetos integrados, conveniados e de agroindústria. Mas a linha esta vinculada aos interesses prioritários de fomento com normas da comissão regional do FCO.</p>
 
-    <p><a href="http://www.bb.com.br/docs/pub/gov/dwn/FCO2010Edicao3.pdf">Programa FCO 2010  </a></p>
+    
     <p><h5> BNDES</h5></p>
-    <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os que não tem prioridade no FCO de qualquer porte com ou sem projetos integrados, conveniados e de agroindústria.</p>
-
-
+    <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os que não tem prioridade no FCO de qualquer porte com ou sem projetos integrados, conveniados e de agroindústria.</p> -->
+    <br>
+    <a href="https://www.gov.br/sudeco/pt-br/assuntos/fundo-constitucional-de-financiamento-do-centro-oeste/programacao-anual-de-financiamento-1/programacao-fco-2022-05-13.pdf"> <h4 class="breadcrumbs-custom-title">Programa FCO 2022</h4>
+    <p> <img src="images/pdf.png" height="50" width="50"></p></a>
+    <br></br>
     <table class="table">
 
         <thead>

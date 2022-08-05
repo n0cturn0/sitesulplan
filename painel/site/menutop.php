@@ -22,20 +22,13 @@
                       </li>
 
 
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Página Principal</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Crédito Rural</a>
                         <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./bannerprincipal.php">Imagens Principais</a>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./creditorural.php">Editar</a>
                           </li>
                           
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./bannersecundario.php">Imagens Secundárias</a>
-                          </li>
-                          <hr>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./meta.php">Meta</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./perfil.php">Perfil</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./fazemos.php">Oque fazemos</a>
-                          </li>
+                          
+                         
                           
                           
                         </ul>
