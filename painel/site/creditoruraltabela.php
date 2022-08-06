@@ -143,6 +143,10 @@ foreach ($tbcredito_view as $key => $value) {
   <td><?php echo $value['base_calculo'] ?></td>
   <td><?php echo $value['preco'] ?></td>
   <td><a href="<?php echo $value['id']; ?>" type="button" class="btn btn-success btn-sm">Editar</a></td>
+  <td><?php echo $value['descricao'] ?></td>
+  <td><?php echo $value['base_calculo'] ?></td>
+  <td><?php echo $value['preco'] ?></td>
+  <td><a href="<?php echo $value['id']; ?>" type="button" class="btn btn-success btn-sm">Editar</a></td>
 </tr>
 <?php } ?>
 </tbody>
