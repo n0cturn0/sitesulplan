@@ -16,23 +16,11 @@ $preco = $_POST['preco'];
 $id = $_POST['id'];
 
 
-//  $sql = 'UPDATE tabela_crural SET descricao=?,  SET base_calculo=?, SET preco=?, WHERE id = ?';
-//  $stmt = $mysqli->prepare($sql);
-//  $stmt->bind_param("sssi",$descricao, $calculo, $preco, $id );
-// $sql = "UPDATE tabela_crural SET descricao=? ,  SET base_calculo=?, SET preco=? WHERE id=?";
-// if ($stmt = mysqli_prepare($mysqli,$sql)){
-//     mysqli_stmt_bind_param($stmt, 'sssi', $descricao, $calculo, $preco, $id);  
-//     mysqli_stmt_execute($stmt);
-//     echo "Record Updated:";
-//     echo mysqli_affected_rows($mysqli);
-// } else {
-//     echo mysqli_error($mysqli);
-// }
 
 $sql = "UPDATE tabela_crural SET descricao='".$descricao."',   base_calculo='".$calculo."', preco='".$preco."' WHERE id=".$id;
 
 if ($mysqli->query($sql)==true){
-    echo 'ok';
+    header('Location: creditoruraltabela.php');
 } else {
     echo $mysqli->error;
 }
