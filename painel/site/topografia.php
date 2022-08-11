@@ -1,11 +1,20 @@
+<?php 
+require_once '../../vendor/autoload.php';
+require_once  '../../site/config/db.php';
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
+$auth = new Delight\Auth\Auth($db);
+if (!$auth->isLoggedIn()) {
+    header('Location: ../../login.html');
+}
+?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Sulplan</title>
+    <title>Sulplan Painel de administração</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="js/fk.js"></script><link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="js/fk.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Poppins:wght@400;600&amp;family=Kalam:wght@300;400;700&amp;display=swap">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fonts.css">
@@ -60,72 +69,76 @@
                     <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
                   </div>
                 </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
-                      </li>
-                      <li class="rd-nav-item" >
-                      <a class="rd-nav-link" href="{{ url('/twitter')}}">
-                        <img src="images/twitter.png"  width="50" height="50">
-                      </a>
-                      </li>
-
-                    </ul>
-                  </div>
-                  <!-- RD Navbar Search-->
-
-                </div>
+               <?php  include_once('./menutop.php');?> 
               </div>
             </div>
           </nav>
         </div>
       </header>
-
-   <!--topografia -->
-
-   <section class="section breadcrumbs-custom">
-    <div class="parallax-container" data-parallax-img="images/bg-breadcrumbs.jpg">
-      <div class="breadcrumbs-custom-body parallax-content context-dark">
-        <div class="container">
-          <h2 class="breadcrumbs-custom-title">T O P O G R A F I A</h2>
-        </div>
-      </div>
-    </div>
-    <?php
-    require_once ('./config/db.php'); 
-$credito = "SELECT texto FROM paginas where id = 2";
-$result = $mysqli->query($credito);
-while($row = $result->fetch_array())
-{
-  $topografia_view[] = $row;
-}
-?>
-    <div class="breadcrumbs-custom-footer">
-      <div class="container">
-        <ul class="breadcrumbs-custom-path">
-          <li><a href="index.html">Home</a></li>
-          <li class="active">Topografia</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section section-md section-first bg-default text-md-left">
-    <div class="container">
-      <h2 class="text-primary">Topografia:</h2>
       <?php 
+ require_once ('./config/db.php'); 
+ $table_cr = "SELECT * from tabela_crural";
+ $result = $mysqli->query($table_cr);
+ while($row = $result->fetch_array())
+ {
+   $tbcredito_view[] = $row;
+ }
 
-foreach ($topografia_view as $values)
-{
-echo $values[0];
-}
-?>
-      
+
+ ?>
+      <section class="section section-md bg-default text-center">
+        <div class="container">
+          <div class="row justify-content-md-center">
+          
+            <div class="col-md-9 col-lg-7 col-xl-5">
+          
+           <div class="block-1 pe-xl-70">
+          
+           
+         
+          
+          
+                 
+                  <div class="row row-10 gx-10 gx-10" data-lightgallery="group">
+                   
+                 
+                    <div class="col-4 col-sm-2 col-lg-4">
+                   
+                    
+                    </div>
+                  
+                  </div>
+                </div>
+        
+              <h3>Edição da página Topografica</h3>
+            
+              <!--RD Mailform-->
+            
+             
+              <form   method="post" action="updatecreditoruraltabela.php" enctype="multipart/form-data">
+                 
+                <div class="row row-20 row-narrow">
+                <div class="col-12">
+                    <div class="form-wrap">
+                   
+
+                    <textarea  name="meta"  style="width: 100%;">
+                <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
+                    </textarea>
 
 
 
-    </div>
-  </section>
+                    </div>
+                  </div>
+                </div>
+              </form>
+               
+             
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
 
       <footer class="section footer-modern footer-modern-2">
 
@@ -139,5 +152,9 @@ echo $values[0];
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>
