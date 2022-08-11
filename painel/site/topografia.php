@@ -75,17 +75,15 @@ if (!$auth->isLoggedIn()) {
           </nav>
         </div>
       </header>
-      <?php 
- require_once ('./config/db.php'); 
- $table_cr = "SELECT * from tabela_crural";
- $result = $mysqli->query($table_cr);
- while($row = $result->fetch_array())
- {
-   $tbcredito_view[] = $row;
- }
-
-
- ?>
+      <?php
+    require_once ('./config/db.php'); 
+$credito = "SELECT texto FROM paginas where id = 2";
+$result = $mysqli->query($credito);
+while($row = $result->fetch_array())
+{
+  $topografia_view[] = $row;
+}
+?>
       <section class="section section-md bg-default text-center">
         <div class="container">
           <div class="row justify-content-md-center">
@@ -115,7 +113,7 @@ if (!$auth->isLoggedIn()) {
               <!--RD Mailform-->
             
              
-              <form   method="post" action="updatecreditoruraltabela.php" enctype="multipart/form-data">
+              <form   method="post" action="updatetopografia.php" enctype="multipart/form-data">
                  
                 <div class="row row-20 row-narrow">
                 <div class="col-12">
@@ -123,12 +121,15 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($topografia_view as $values) { echo $values[0]; } ?>
                     </textarea>
 
 
 
                     </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-block btn-primary" type="submit">Editar</button>
                   </div>
                 </div>
               </form>
