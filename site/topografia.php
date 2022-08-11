@@ -57,7 +57,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
+                    <!--Brand--><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -104,7 +104,7 @@ while($row = $result->fetch_array())
     <div class="breadcrumbs-custom-footer">
       <div class="container">
         <ul class="breadcrumbs-custom-path">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li class="active">Topografia</li>
         </ul>
       </div>

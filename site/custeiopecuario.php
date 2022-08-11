@@ -58,7 +58,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
+                    <!--Brand--><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -91,6 +91,17 @@
         </div>
       </div>
     </div>
+    <?php 
+ require_once ('./config/db.php'); 
+ $credito = "SELECT texto FROM paginas where id = 5";
+ $result = $mysqli->query($credito);
+ while($row = $result->fetch_array())
+ {
+   $custeiopecuario_view[] = $row;
+ }
+
+
+ ?>
     <div class="breadcrumbs-custom-footer">
       <div class="container">
         <ul class="breadcrumbs-custom-path">
@@ -103,12 +114,7 @@
   <section class="section section-md section-first bg-default text-md-left">
     <div class="container">
       <h2 class="text-primary">Custeio Pecuário:</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Juros equalizados de 6,75% a.a.</li>
-        <li class="list-group-item">Custeio Alongado</li>
-        <li class="list-group-item">Financiamento de 100% do orçamento</li>
-
-      </ul>
+      <?php  foreach ($custeiopecuario_view as $values) { echo $values[0]; } ?>
     </div>
   </section>
 
