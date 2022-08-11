@@ -51,6 +51,13 @@
                         </ul>
                       </li>
 
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Custeio Agrícola</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./custeioagricola.php">Editar</a>
+                          </li>
+                         </ul>
+                      </li>
+
 
 
 

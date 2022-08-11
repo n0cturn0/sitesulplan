@@ -99,9 +99,22 @@
       </div>
     </div>
   </section>
+  <?php 
+ require_once ('./config/db.php'); 
+ $credito = "SELECT texto FROM paginas where id = 4";
+ $result = $mysqli->query($credito);
+ while($row = $result->fetch_array())
+ {
+   $custeio_view[] = $row;
+ }
+
+
+ ?>
   <section class="section section-md section-first bg-default text-md-left">
     <div class="container">
-      <h2 class="text-primary">Custeio Agrícola:</h2>
+
+    <?php  foreach ($custeio_view as $values) { echo $values[0]; } ?>
+      <!-- <h2 class="text-primary">Custeio Agrícola:</h2>
 
 
 
@@ -110,7 +123,7 @@
         <li class="list-group-item">Custeio Alongado</li>
         <li class="list-group-item">Financiamento de 100% do orçamento</li>
 
-      </ul>
+      </ul> -->
 
 
 

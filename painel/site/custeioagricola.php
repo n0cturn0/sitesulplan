@@ -77,11 +77,11 @@ if (!$auth->isLoggedIn()) {
       </header>
       <?php 
  require_once ('./config/db.php'); 
- $credito = "SELECT texto FROM paginas where id = 3";
+ $credito = "SELECT texto FROM paginas where id = 4";
  $result = $mysqli->query($credito);
  while($row = $result->fetch_array())
  {
-   $ambiental_view[] = $row;
+   $custeio_view[] = $row;
  }
 
 
@@ -115,7 +115,7 @@ if (!$auth->isLoggedIn()) {
               <!--RD Mailform-->
             
              
-              <form   method="post" action="update_ambiental.php" enctype="multipart/form-data">
+              <form   method="post" action="update_custeio.php" enctype="multipart/form-data">
                  
                 <div class="row row-20 row-narrow">
                   <div class="col-md-12">
@@ -123,7 +123,7 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($ambiental_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($custeio_view as $values) { echo $values[0]; } ?>
                     </textarea>
 
 
