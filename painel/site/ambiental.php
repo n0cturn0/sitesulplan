@@ -1,7 +1,16 @@
+<?php 
+require_once '../../vendor/autoload.php';
+require_once  '../../site/config/db.php';
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
+$auth = new Delight\Auth\Auth($db);
+if (!$auth->isLoggedIn()) {
+    header('Location: ../../login.html');
+}
+?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Sulplan</title>
+    <title>Sulplan Painel de administração</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,102 +69,88 @@
                     <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-sulplan.jpg" alt="" width="251" height="70"/><img class="brand-logo-light" src="images/logo-inverse-251x70.png" alt="" width="251" height="70"/></a>
                   </div>
                 </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
-                      </li>
-                      <li class="rd-nav-item" >
-                      <a class="rd-nav-link" href="{{ url('/twitter')}}">
-                        <img src="images/twitter.png"  width="50" height="50">
-                      </a>
-                      </li>
-
-                    </ul>
-                  </div>
-                  <!-- RD Navbar Search-->
-
-                </div>
+               <?php  include_once('./menutop.php');?> 
               </div>
             </div>
           </nav>
         </div>
       </header>
+      <?php 
+ require_once ('./config/db.php'); 
+ $credito = "SELECT texto FROM paginas where id = 3";
+ $result = $mysqli->query($credito);
+ while($row = $result->fetch_array())
+ {
+   $ambiental_view[] = $row;
+ }
 
-      <section class="section breadcrumbs-custom">
-    <div class="parallax-container" data-parallax-img="images/bg-breadcrumbs.jpg">
-      <div class="breadcrumbs-custom-body parallax-content context-dark">
+
+ ?>
+      <section class="section section-md bg-default text-center">
         <div class="container">
-          <h2 class="breadcrumbs-custom-title">A M B I E N T A L</h2>
+          <div class="row justify-content-md-center">
+          
+            <div class="col-md-9 col-lg-7 col-xl-5">
+          
+           <div class="block-1 pe-xl-70">
+          
+           
+         
+          
+          
+                 
+                  <div class="row row-10 gx-10 gx-10" data-lightgallery="group">
+                   
+                 
+                    <div class="col-4 col-sm-2 col-lg-4">
+                   
+                    
+                    </div>
+                  
+                  </div>
+                </div>
+        
+              <h3>Edição da Página ambiental</h3>
+            
+              <!--RD Mailform-->
+            
+             
+              <form   method="post" action="updatecreditorural.php" enctype="multipart/form-data">
+                 
+                <div class="row row-20 row-narrow">
+                  <div class="col-md-12">
+                    <div class="form-wrap">
+                   
+
+                    <textarea  name="meta"  style="width: 100%;">
+                <?php  foreach ($ambiental_view as $values) { echo $values[0]; } ?>
+                    </textarea>
+
+
+
+                    </div>
+                  </div>
+                  
+                  <!-- <div class="col-12">
+                    <div class="form-wrap">
+                    <label>Digite o texto para esse banner da página Inicial</label>
+                      <textarea class="form-input" id="contact-2-message" name="pequenotexto" data-constraints="@Required"></textarea>
+                    </div>
+                  </div> -->
+                
+                
+                  <div class="col-12">
+                    <button class="btn btn-block btn-primary" type="submit">Editar</button>
+                  </div>
+                </div>
+              </form>
+               
+             
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <?php 
-      require_once ('./config/db.php'); 
-      $credito = "SELECT texto FROM paginas where id = 3";
-      $result = $mysqli->query($credito);
-      while($row = $result->fetch_array())
-      {
-        $credito_view[] = $row;
-      }
-      ?>
-    <div class="breadcrumbs-custom-footer">
-      <div class="container">
-        <ul class="breadcrumbs-custom-path">
-          <li><a href="index.html">Home</a></li>
-          <li class="active">Ambiental</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section section-md section-first bg-default text-md-left">
-    <div class="container">
-      <h2 class="text-primary">Ambiental:</h2>
-
-      
-        <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
-      
-      <!-- <p>Projetos ambientais são todos aqueles ligados à investimentos na propriedade rural que necessitem de autorização de órgãos do meio ambiente como Sema e o Ibama.</p>
-
-      <h5>Principais casos</h5>
-
-
-      <ul class="list-group">
-        <li class="list-group-item">Desmatamento de área silvestre para a implantação de agropecuária</li>
-        <li class="list-group-item">Regularização de área de reservas</li>
-        <li class="list-group-item">Implantação de Secadores e Armazéns.</li>
-
-      </ul>
-
-      <h5>Registros</h5>
-      <ul class="list-group">
-        <li class="list-group-item">Registro no IBAMA</li>
-        <li class="list-group-item">Registro no SEMA</li>
-       </ul>
-
-
-       <h5>
-        Contas de referência
-      </h5>
-      <p>Referência 1</p>
-      <p>
-        Licença do armazém da Fazenda Volta Grande em Sidrolândia MS.
-      </p>
+      </section>
       <hr>
-      <p>Referência 2</p>
-      <p>
-        Licenciamento ambiental da Faz Florida, supressão vegetal em projeto de assentamento do Banco da Terra.
-      </p>
-      <hr>
-      <p>Referência 3</p>
-      <p>
-        Projeto de licença Ambiental para supressão vegetal Faz Memória - Sidrolândia MS.
-      </p> -->
-
-
-
-    </div>
-  </section>
 
       <footer class="section footer-modern footer-modern-2">
 
@@ -169,5 +164,9 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nice/nicEdit.js"></script>
+    <script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
   </body>
 </html>
