@@ -3,7 +3,7 @@
 require_once '../../vendor/autoload.php';
 require_once('./config/db.php');
 $mysqli = new mysqli($host, $user, $pass, $database);
-$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, '');
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
 $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');

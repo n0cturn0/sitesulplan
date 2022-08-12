@@ -1,0 +1,7 @@
+[05-Aug-2022 18:35:40 UTC] PHP Warning:  include_once(./menutop.php): failed to open stream: No such file or directory in /home/sulplan/public_html/painel/site/bannerprincipal.php on line 72
+[05-Aug-2022 18:35:40 UTC] PHP Warning:  include_once(): Failed opening './menutop.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sulplan/public_html/painel/site/bannerprincipal.php on line 72
+[05-Aug-2022 18:36:27 UTC] PHP Warning:  ini_set(): Headers already sent. You cannot change the session module's ini settings at this time in /home/sulplan/public_html/vendor/delight-im/auth/src/Auth.php on line 62
+[05-Aug-2022 18:36:27 UTC] PHP Warning:  ini_set(): Headers already sent. You cannot change the session module's ini settings at this time in /home/sulplan/public_html/vendor/delight-im/auth/src/Auth.php on line 64
+[05-Aug-2022 18:36:27 UTC] PHP Warning:  ini_set(): Headers already sent. You cannot change the session module's ini settings at this time in /home/sulplan/public_html/vendor/delight-im/auth/src/Auth.php on line 66
+[05-Aug-2022 18:36:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sulplan/public_html/painel/site/meta.php:1) in /home/sulplan/public_html/vendor/delight-im/auth/src/Auth.php on line 76
+[05-Aug-2022 18:36:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sulplan/public_html/painel/site/meta.php:1) in /home/sulplan/public_html/painel/site/meta.php on line 10

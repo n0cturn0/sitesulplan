@@ -1,0 +1,342 @@
+[03-Aug-2022 18:23:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:23:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:25:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:28:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:28:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/teste.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/teste.php on line 87
+[03-Aug-2022 18:29:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/teste.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/teste.php on line 87
+[03-Aug-2022 18:29:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/teste.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/teste.php on line 87
+[03-Aug-2022 18:32:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:32:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:33:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:34:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:35:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:36:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:36:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:37:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:37:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:38:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:38:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:38:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:38:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:40:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:40:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:40:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:41:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:41:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:42:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:42:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 18:44:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homolog.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homolog.php on line 87
+[03-Aug-2022 18:44:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homolog.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homolog.php on line 87
+[03-Aug-2022 18:59:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[03-Aug-2022 19:00:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/main.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/main.php on line 87
+[04-Aug-2022 12:12:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/main.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/main.php on line 87
+[04-Aug-2022 12:13:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[04-Aug-2022 12:16:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[04-Aug-2022 13:17:23 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/sulplan/public_html/site/homologacao.php on line 85
+[04-Aug-2022 13:17:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homologacao.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homologacao.php on line 87
+[04-Aug-2022 13:17:44 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/sulplan/public_html/site/homologacao.php on line 85
+[04-Aug-2022 13:17:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homologacao.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homologacao.php on line 87
+[04-Aug-2022 13:18:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/index.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/index.php on line 87
+[04-Aug-2022 13:18:51 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/sulplan/public_html/site/homologacao.php on line 85
+[04-Aug-2022 13:18:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homologacao.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homologacao.php on line 87
+[04-Aug-2022 13:19:44 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/sulplan/public_html/site/homologacao.php on line 85
+[04-Aug-2022 13:19:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homologacao.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homologacao.php on line 87
+[04-Aug-2022 13:20:24 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/sulplan/public_html/site/homologacao.php on line 85
+[04-Aug-2022 13:20:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/sulplan/public_html/site/homologacao.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/homologacao.php on line 87
+[04-Aug-2022 14:21:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:09:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:09:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:09:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:10:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:10:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:10:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:10:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:13:20 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:13:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:14:42 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:19:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:19:43 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:19:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:27:47 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:27:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:27:53 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:27:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:28:27 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 15:28:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:27:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:27:25 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:27:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:30:57 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:30:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:35:04 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:35:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:35:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:40:17 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:40:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:41:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:41:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:52:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:54:24 UTC] PHP Notice:  Undefined variable: mysqli in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 16:54:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/homologacao.php(88): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[04-Aug-2022 17:02:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on null in /home/sulplan/public_html/site/config/db.php:14
+Stack trace:
+#0 /home/sulplan/public_html/site/index.php(84): require_once()
+#1 {main}
+  thrown in /home/sulplan/public_html/site/config/db.php on line 14
+[05-Aug-2022 18:38:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[06-Aug-2022 11:31:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[07-Aug-2022 17:07:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[07-Aug-2022 18:03:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[08-Aug-2022 16:15:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[10-Aug-2022 08:41:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[10-Aug-2022 15:09:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[10-Aug-2022 16:18:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110
+[11-Aug-2022 13:18:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/sulplan/public_html/site/creditorural.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/site/creditorural.php on line 110

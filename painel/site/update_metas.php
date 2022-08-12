@@ -2,13 +2,13 @@
 require_once '../../vendor/autoload.php';
 require_once('./config/db.php');
 
-$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, '');
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
 $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
 }
 
-$mysqli = mysqli_connect($host, $user, $pass, 'phpauth');
+$mysqli = mysqli_connect($host, $user, $pass, 'sulplan_phpauth');
 
 // $temp = explode(".", $_FILES["arquivo"]["name"]);
 // $newfilename = round(microtime(true)) . '.' . end($temp);
@@ -21,7 +21,7 @@ $sql = "UPDATE inicial SET texto='$meta' WHERE id=2";
 
 if (mysqli_query($mysqli, $sql)){
   
-     header('Location: index.php');
+     header('Location: meta.php');
    
 }else {
     echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);

@@ -1,0 +1,4 @@
+[04-Aug-2022 00:03:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Delight\Db\Throwable\Error' not found in /home/sulplan/public_html/vendor/delight-im/db/src/Throwable/TableNotFoundError.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/sulplan/public_html/vendor/delight-im/db/src/Throwable/TableNotFoundError.php on line 12

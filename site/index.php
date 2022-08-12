@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html class="wide wow-animation" lang="pt-Br">
   <head>
     <title>Sulplan</title>
     <meta charset="utf-8">
@@ -65,6 +65,14 @@
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
                       </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="creditorural.php">Crédito Rural</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="topografia.php">Topografia</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="ambiental.php">Ambiental</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="custeioagricola.php">Custeio Agrícola</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="custeiopecuario.php">Custeio Pecuário</a></li>
+
+
                       <li class="rd-nav-item" >
                       <a class="rd-nav-link" href="twitter.php">
                         <img src="images/twitter.png"  width="50" height="50">
@@ -85,25 +93,36 @@
 //Baners Principal
 $query = "SELECT * FROM img_banners";
 $result = $mysqli->query($query);
+
 while($row = $result->fetch_array())
 {
 $rows[] = $row;
 }
 //Metas
-$metas = "SELECT texto FROM inicial where id = 2";
-$result = $mysqli->query($metas);
-while($row = $result->fetch_array())
-{
-$meta[] = $row;
-}
+$mysqli = new mysqli($host, $user, $pass, $database);
+$metas = "SELECT texto FROM inicial where id=2";
+       $result = $mysqli->query($metas); 
+       while($p_metas = $result->fetch_array())
+        { 
+          $meta[] = $p_metas;
+       
+        }
 
 //Perfil
-$perfil = "SELECT texto FROM inicial where id = 3";
-$result = $mysqli->query($perfil);
-while($row = $result->fetch_array())
-{
-$exibe_perfil[] = $row;
-}
+$mysqliperfil = new mysqli($host, $user, $pass, $database);
+$perfil = "SELECT texto FROM inicial where id=3";
+       $result = $mysqliperfil->query($perfil); 
+       while($perfil_metas = $result->fetch_array())
+        { 
+          $exibe_perfil[] = $perfil_metas;
+       
+        }
+// $perfil = "SELECT texto FROM inicial where id = 3";
+// $result = $mysqli->query($perfil);
+// while($row = $result->fetch_array())
+// {
+// $exibe_perfil[] = $row;
+// }
 //Oque Fazemos
 $fazemos = "SELECT texto FROM inicial where id = 4";
 $result = $mysqli->query($fazemos);
@@ -121,7 +140,7 @@ $oque_fazemos[] = $row;
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xl-10">
-                <h2 data-caption-animate="fadeInUp" data-caption-delay="100"><?=$value['titulo'] ?></h2>
+                <h2 data-caption-animate="fadeInUp" data-caption-delay="100"><?=$value['titulo']; ?></h2>
                 <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="250"><?=$value['textopequeno']; ?></p><!--<a class="btn btn-primary" href="#" data-caption-animate="fadeInUp" data-caption-delay="450">Learn more</a> -->
               </div>
             </div>
@@ -891,7 +910,7 @@ $oque_fazemos[] = $row;
                 <p><?php 
                   foreach($exibe_perfil as $row)
                   {
-                    echo $row['texto'];
+                    echo  $row['texto'];
                   }
                 ?>
 
@@ -931,21 +950,14 @@ $oque_fazemos[] = $row;
            
             <div class="slick-slider carousel-parent slick-nav-1 slick-nav-2" id="carousel-parent" data-items="1" data-autoplay="true" data-slide-effect="true" data-child="#child-carousel" data-for="#child-carousel" data-arrows="true">
            <?php 
-            foreach ($secundario as $value) {
-                # code...
-            
-           ?>
+            foreach ($secundario as $value) { ?>
             <div class="item"><img src="./banners/<?=$value['imagem'] ?>" alt="" width="634" height="373"/>
               </div>
               <?php } ?>
             </div>
             
             <div class="slick-slider child-carousel" id="child-carousel" data-items="3" data-sm-items="4" data-md-items="4" data-lg-items="4" data-xl-items="4" data-xxl-items="4" data-for="#carousel-parent">
-            <?php 
-            foreach ($secundario as $img) {
-                # code...
-            
-           ?>
+            <?php foreach ($secundario as $img) { ?>
               <div class="item"><img src="./banners/<?=$img['imagem'] ?>" alt="" width="143" height="114"/>
               </div>
              <?php } ?>

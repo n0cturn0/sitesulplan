@@ -110,7 +110,8 @@ $contador = count($rows);
                    <?php foreach ($rows as  $value) { ?>
                     <div class="col-4 col-sm-2 col-lg-4">
                    
-                    <a href="apagarsecundario.php?id=<?=$value['id'];?>">  Apagar </a>
+                    <a href="apagarsecundario.php?id=<?=$value['id'];?>">Apagar</a><br>
+                  
                       <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="../../site/banners/<?=$value['imagem']; ?>" data-lightgallery="item"><img src="../../site/banners/<?=$value['imagem']; ?>" alt="" width="93" height="93"/></a>
                     </div>
                    <?php } ?>

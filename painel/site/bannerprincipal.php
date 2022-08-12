@@ -108,7 +108,8 @@ $contador = count($rows);
                     
                    ?>
                     <div class="col-4 col-sm-2 col-lg-4">
-                    <a href="apagar.php?id=<?= $key['id'];?>">  Apagar </a>
+                    <a href="apagar.php?id=<?= $key['id'];?>">  Apagar </a><br>
+                    <a href="editarsecundario.php?id=<?=$key['id'];?>">Editar</a>
                       <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="../../site/images/<?=$key['imagem'];?>" data-lightgallery="item"><img src="../../site/images/<?=$key['imagem'];?>" alt="" width="93" height="93"/></a>
                     </div>
                    <?php } ?>

@@ -65,6 +65,11 @@
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
                       </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="creditorural.php">Crédito Rural</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="topografia.php">Topografia</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="ambiental.php">Ambiental</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="custeioagricola.php">Custeio Agrícola</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="custeiopecuario.php">Custeio Pecuário</a></li>
                       <li class="rd-nav-item" >
                       <a class="rd-nav-link" href="{{ url('/twitter')}}">
                         <img src="images/twitter.png"  width="50" height="50">
