@@ -1,5 +1,4 @@
 <?php
-
 require_once '../../vendor/autoload.php';
 require_once('./config/db.php');
 $mysqli = new mysqli($host, $user, $pass, $database);
@@ -8,7 +7,6 @@ $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
 }
-
 
 $id = $search = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
 if (!filter_var($id, FILTER_VALIDATE_INT) === false) {
