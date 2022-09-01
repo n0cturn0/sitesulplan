@@ -58,7 +58,7 @@ if (filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
                        <?php  foreach ($tbcredito_view as $key => $value) { ?>
                     
                   
-                    <a class="item" href="../../site/banners/<?=$value['imagem']; ?>" data-lightgallery="item"><img src="../../site/banners/<?=$value['imagem']; ?>" alt="" width="300" height="300"/></a>
+                    <a class="item" href="../../site/banners/<?=$value['imagem']; ?>" data-lightgallery="item"><img src="../../site/images/<?=$value['imagem']; ?>" alt="" width="300" height="300"/></a>
                    
                     <br> <br> <br>
                     <div class="form-wrap">
