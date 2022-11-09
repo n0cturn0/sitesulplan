@@ -115,7 +115,7 @@ if (!$auth->isLoggedIn()) {
               <!--RD Mailform-->
             
              
-              <form   method="post" action="update_custeiopecuario.php" enctype="multipart/form-data">
+              <form   method="post" action="update_custeiopeciario.php" enctype="multipart/form-data">
                  
                 <div class="row row-20 row-narrow">
                   <div class="col-md-12">

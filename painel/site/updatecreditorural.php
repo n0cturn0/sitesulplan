@@ -2,7 +2,7 @@
 require_once '../../vendor/autoload.php';
 require_once('./config/db.php');
 
-$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, '');
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
 $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
@@ -12,7 +12,7 @@ if (filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
 $id = $_GET['id'];
 
 } 
-
+$mysqli = mysqli_connect($host, $user, $pass, $database);
 
  $table_cr = "SELECT * from tabela_crural where id = $id";
  $result = $mysqli->query($table_cr);

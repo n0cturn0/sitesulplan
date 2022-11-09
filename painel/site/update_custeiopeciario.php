@@ -9,20 +9,17 @@ if (!$auth->isLoggedIn()) {
 }
 
 $mysqli = mysqli_connect($host, $user, $pass, $database);
-
 $meta = $_POST['meta'];
 
 $timestamp = date("Y-m-d H:i:s", time());
 
-$sql = "UPDATE paginas SET texto='$meta' WHERE id=2";
+$sql = "UPDATE paginas SET texto='$meta' WHERE id=5";
 
 
 if (mysqli_query($mysqli, $sql)){
-   
-     header('Location: topografia.php');
+  
+     header('Location: custeiopecuario.php');
    
 }else {
     echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
 }
-
-
