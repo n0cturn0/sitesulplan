@@ -66,6 +66,13 @@
                          </ul>
                       </li>
 
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Endereço e Telefone</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="./foneendereco.php">Editar</a>
+                          </li>
+                         </ul>
+                      </li>
+
 
 
 
