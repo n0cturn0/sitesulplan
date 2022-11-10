@@ -118,7 +118,7 @@
       <h2 class="text-primary">Ambiental:</h2>
 
       
-        <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
+        <?php  foreach ($credito_view as $values) { echo utf8_decode ($values[0]); } ?>
       
       <!-- <p>Projetos ambientais são todos aqueles ligados à investimentos na propriedade rural que necessitem de autorização de órgãos do meio ambiente como Sema e o Ibama.</p>
 

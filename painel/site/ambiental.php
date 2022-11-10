@@ -123,7 +123,7 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($ambiental_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($ambiental_view as $values) { echo utf8_decode($values[0]); } ?>
                     </textarea>
 
 

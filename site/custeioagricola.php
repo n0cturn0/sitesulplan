@@ -118,7 +118,7 @@
   <section class="section section-md section-first bg-default text-md-left">
     <div class="container">
 
-    <?php  foreach ($custeio_view as $values) { echo $values[0]; } ?>
+    <?php  foreach ($custeio_view as $values) { echo utf8_decode($values[0]); } ?>
       <!-- <h2 class="text-primary">Custeio Agrícola:</h2>
 
 

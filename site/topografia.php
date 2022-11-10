@@ -122,7 +122,7 @@ while($row = $result->fetch_array())
 
 foreach ($topografia_view as $values)
 {
-echo $values[0];
+echo utf8_decode($values[0]);
 }
 ?>
       

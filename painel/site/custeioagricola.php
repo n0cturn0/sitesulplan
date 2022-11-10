@@ -1,7 +1,7 @@
 <?php 
 require_once '../../vendor/autoload.php';
 require_once  '../../site/config/db.php';
-$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8", $user, $pass);
 $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
@@ -123,7 +123,7 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($custeio_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($custeio_view as $values) { echo utf8_decode($values[0]); } ?>
                     </textarea>
 
 

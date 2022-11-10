@@ -121,7 +121,7 @@ while($row = $result->fetch_array())
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($topografia_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($topografia_view as $values) { echo utf8_decode($values[0]); } ?>
                     </textarea>
 
 

@@ -2,18 +2,19 @@
 require_once '../../vendor/autoload.php';
 require_once('./config/db.php');
 
-$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8mb4", $user, $pass);
+$db = new \PDO("mysql:dbname=$database;host=$host;charset=utf8", $user, $pass);
 $auth = new Delight\Auth\Auth($db);
 if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
 }
-
+$mysqli = mysqli_connect($host, $user, $pass, $database);
+mysqli_set_charset($mysqli, "utf8");
 if (filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
 $id = $_GET['id'];
 
 } 
-$mysqli = mysqli_connect($host, $user, $pass, $database);
 
+require_once ('./config/db.php'); 
  $table_cr = "SELECT * from tabela_crural where id = $id";
  $result = $mysqli->query($table_cr);
  while($row = $result->fetch_array())
@@ -145,7 +146,7 @@ foreach ($tbcredito_view as $key => $value) {
 ?>
  <form   method="post" action="./poupdatecreditorural.php" enctype="multipart/form-data">
 <tr>
-  <td><input type="text" name="descricao" value="<?php echo $value['descricao'] ?>"></td>
+  <td><input type="text" name="descricao" value="<?php echo  $value['descricao']; ?>"></td>
   <td><input type="text" name="base_calculo" value="<?php echo $value['base_calculo'] ?>"></td>
   <td><input type="text" name="preco" value="<?php echo $value['preco'] ?>"></td>
         <input type="hidden" name="id" value="<?php echo $value['id']; ?>">

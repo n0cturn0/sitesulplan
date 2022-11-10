@@ -115,7 +115,7 @@ if (!$auth->isLoggedIn()) {
               <!--RD Mailform-->
             
              
-              <form   method="post" action="updatecreditorural.php" enctype="multipart/form-data">
+              <form   method="post" action="update_credito2.php" enctype="multipart/form-data">
                  
                 <div class="row row-20 row-narrow">
                   <div class="col-md-12">
@@ -123,7 +123,7 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($credito_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($credito_view as $values) {  echo utf8_decode($values[0]); } ?>
                     </textarea>
 
 
