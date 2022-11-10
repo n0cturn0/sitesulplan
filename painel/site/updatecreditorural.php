@@ -8,7 +8,7 @@ if (!$auth->isLoggedIn()) {
     header('Location: ../../login.html');
 }
 $mysqli = mysqli_connect($host, $user, $pass, $database);
-mysqli_set_charset($mysqli, "utf8");
+ mysqli_set_charset($mysqli, "utf8");
 if (filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
 $id = $_GET['id'];
 
@@ -147,7 +147,7 @@ foreach ($tbcredito_view as $key => $value) {
  <form   method="post" action="./poupdatecreditorural.php" enctype="multipart/form-data">
 <tr>
   <td><input type="text" name="descricao" value="<?php echo  $value['descricao']; ?>"></td>
-  <td><input type="text" name="base_calculo" value="<?php echo $value['base_calculo'] ?>"></td>
+  <td><input type="text" name="base_calculo" value="<?php echo $value['base_calculo']; ?>"></td>
   <td><input type="text" name="preco" value="<?php echo $value['preco'] ?>"></td>
         <input type="hidden" name="id" value="<?php echo $value['id']; ?>">
    <td>   <button class="btn btn-block btn-primary" type="submit">Atualizar</button></td>

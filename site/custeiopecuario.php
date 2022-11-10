@@ -119,7 +119,7 @@
   <section class="section section-md section-first bg-default text-md-left">
     <div class="container">
       <h2 class="text-primary">Custeio Pecuário:</h2>
-      <?php  foreach ($custeiopecuario_view as $values) { echo $values[0]; } ?>
+      <?php  foreach ($custeiopecuario_view as $values) { echo utf8_decode($values[0]); } ?>
     </div>
   </section>
 
