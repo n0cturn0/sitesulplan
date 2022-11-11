@@ -105,15 +105,24 @@ $contador = count($rows);
                 <div class="row row-20 row-narrow">
                   <div class="col-md-6">
                     <div class="form-wrap">
-                    <input class="form-input" id="contact-2-phone" type="text" name="telefone" data-constraints="@Required">
+                    <input class="form-input" id="contact-2-phone" placeholder="(67) 3372-1418" type="text" name="telefone" data-constraints="@Required">
                       <label>Fone</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
                     
-                      <input class="form-input" id="contact-2-phone" type="text" name="endereco" data-constraints="@Required">
+                      <input class="form-input" id="contact-2-phone" placeholder="Rua Sergipe" type="text" name="endereco" data-constraints="@Required">
                       <label>Endereço</label>
+                     
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="form-wrap">
+                    
+                      <input class="form-input" id="contact-2-phone" placeholder="email@sulplan.com" type="text" name="email" data-constraints="@Required">
+                      <label>E-mail</label>
                      
                     </div>
                   </div>

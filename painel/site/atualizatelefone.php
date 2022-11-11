@@ -12,11 +12,12 @@ $mysqli = mysqli_connect($host, $user, $pass, $database);
 
 $telefone =$_POST['telefone'];
 $endereco = $_POST['endereco'];
+$email = $_POST['email'];
 
 
 
 
-$sql = "UPDATE enderecosite SET tele='".$telefone."',   endereco='".$endereco."' WHERE Column1=1";
+$sql = "UPDATE enderecosite SET tele='".$telefone."',   endereco='".$endereco."', email='".$email."' WHERE Column1=1";
 
 if ($mysqli->query($sql)==true){
     header('Location: foneendereco.php');

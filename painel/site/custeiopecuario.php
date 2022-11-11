@@ -79,6 +79,7 @@ if (!$auth->isLoggedIn()) {
  require_once ('./config/db.php'); 
  $credito = "SELECT texto FROM paginas where id = 5";
  $result = $mysqli->query($credito);
+ $mysqli->set_charset("utf8");
  while($row = $result->fetch_array())
  {
    $custeiopecuario_view[] = $row;
@@ -123,7 +124,7 @@ if (!$auth->isLoggedIn()) {
                    
 
                     <textarea  name="meta"  style="width: 100%;">
-                <?php  foreach ($custeiopecuario_view as $values) { echo $values[0]; } ?>
+                <?php  foreach ($custeiopecuario_view as $values) { echo utf8_decode($values[0]); } ?>
                     </textarea>
 
 
