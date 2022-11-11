@@ -121,7 +121,7 @@ $contador = count($rows);
                 
                 
                   <div class="col-12">
-                    <button class="btn btn-block btn-primary" type="submit">Cadastra banner</button>
+                    <button class="btn btn-block btn-primary" type="submit">Atualizar</button>
                   </div>
                 </div>
               </form>
