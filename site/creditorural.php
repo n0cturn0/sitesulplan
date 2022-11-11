@@ -52,7 +52,7 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                      <div class="unit-body"><a href="mailto:#">suplan@sulplan.com.br</a></div>
+                      <div class="unit-body"><a href="mailto:#"><?php echo utf8_decode($value['email']); ?></a></div>
                     </div>
                   </li>
                   <li>
@@ -135,7 +135,7 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
 
       foreach ($credito_view as $values)
       {
-        echo $values[0];
+        // echo $values[0];
       }
 
       $table_cr = "SELECT * from tabela_crural";
@@ -161,7 +161,7 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
     <p>Pode ser financiado por este programa investimentos agropecuários de todos os tipos, principalmente os que não tem prioridade no FCO de qualquer porte com ou sem projetos integrados, conveniados e de agroindústria.</p> -->
     <br>
     <a href="https://www.gov.br/sudeco/pt-br/assuntos/fundo-constitucional-de-financiamento-do-centro-oeste/programacao-anual-de-financiamento-1/programacao-fco-2022-05-13.pdf"> <h4 class="breadcrumbs-custom-title">Programa FCO 2022</h4>
-    <p> <img src="images/pdf.png" height="50" width="50"></p></a>
+    <p> <img src="../images/pdf.png" height="50" width="50"></p></a>
     <br></br>
     <table class="table table-dark">
 
@@ -194,14 +194,7 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
     <!-- End Credito Rural -->
 
 
-      <footer class="section footer-modern footer-modern-2">
-
-        <div class="footer-modern-panel text-center">
-          <div class="container">
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Sulplan</span><span>.&nbsp;</span><span>Design Luiz Augusto&nbsp;</span><a href="#"></a></p>
-          </div>
-        </div>
-      </footer>
+    <?php  include_once('./footer.php');?>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>

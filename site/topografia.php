@@ -52,13 +52,13 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                      <div class="unit-body"><a href="mailto:#">suplan@sulplan.com.br</a></div>
+                      <div class="unit-body"><a href="mailto:#"><?php echo utf8_decode($value['email']); ?></a></div>
                     </div>
                   </li>
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-map-marker"></span></div>
-                      <div class="unit-body"><a href="#"><?php echo $value['endereco']; ?></a></div>
+                      <div class="unit-body"><a href="#"><?php echo utf8_decode($value['endereco']); ?></a></div>
                     </div>
                   </li>
                 </ul>
@@ -148,14 +148,7 @@ echo utf8_decode($values[0]);
     </div>
   </section>
 
-      <footer class="section footer-modern footer-modern-2">
-
-        <div class="footer-modern-panel text-center">
-          <div class="container">
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Sulplan</span><span>.&nbsp;</span><span>Design Luiz Augusto&nbsp;</span><a href="#"></a></p>
-          </div>
-        </div>
-      </footer>
+  <?php  include_once('./footer.php');?>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
