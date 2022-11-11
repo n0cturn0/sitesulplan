@@ -58,7 +58,7 @@ $fone = "SELECT * FROM enderecosite where Column1=1";
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-map-marker"></span></div>
-                      <div class="unit-body"><a href="#"><?php echo $value['endereco']; ?></a></div>
+                      <div class="unit-body"><a href="#"><?php echo utf8_decode($value['endereco']); ?></a></div>
                     </div>
                   </li>
                 </ul>
