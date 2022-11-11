@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
+  <?php require_once ('./config/db.php');
+header('Content-type: text/html; charset=utf-8'); 
+
+//Endereço e Telfone
+$mysqli = new mysqli($host, $user, $pass, $database);
+$mysqli->set_charset("utf8");
+$fone = "SELECT * FROM enderecosite where Column1=1";
+       $result = $mysqli->query($fone); 
+       while($p_fone = $result->fetch_array())
+        { 
+          $fones[] = $p_fone;
+       
+        }
+?>
     <title>Sulplan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
@@ -26,12 +40,13 @@
           <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
             <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-700">
+            <?php foreach ($fones as  $value) { ?>  
               <div class="rd-navbar-aside">
                 <ul class="list-inline list-inline-md">
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
-                      <div class="unit-body"><a href="tel:#">(67) 3272-1418</a></div>
+                      <div class="unit-body"><a href="tel:#"><?php echo $value['tele']; ?></a></div>
                     </div>
                   </li>
                   <li>
@@ -43,11 +58,12 @@
                   <li>
                     <div class="unit unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="icon text-middle fa-map-marker"></span></div>
-                      <div class="unit-body"><a href="#">Rua Sergipe, 136 - Sidrolândia / MS - 79.170-000</a></div>
+                      <div class="unit-body"><a href="#"><?php echo $value['endereco']; ?></a></div>
                     </div>
                   </li>
                 </ul>
               </div>
+              <?php } ?>
             </div>
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
@@ -119,7 +135,7 @@ while($row = $result->fetch_array())
     <div class="container">
       <h2 class="text-primary">Topografia:</h2>
       <?php 
-
+ $mysqli->set_charset("utf8"); 
 foreach ($topografia_view as $values)
 {
 echo utf8_decode($values[0]);
